@@ -1413,3 +1413,9 @@ user_pref("mousewheel.default.delta_multiplier_y", 300); // 250-400; adjust this
  * END: BETTERFOX                                                           *
 ****************************************************************************/
 
+
+/****************************************************************************
+ * ZEN CUSTOM OVERRIDES
+****************************************************************************/
+user_pref("zen.urlbar.behavior", normal);
+user_pref("zen.urlbar.replace-newtab", false);
