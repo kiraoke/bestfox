@@ -7,12 +7,12 @@
 
 ## Installation
 
--open  `about:support` in firefox or firefox based browser.
--go to your profile directory
--add user.js
--create a folder `chrome`
--add userChrome.css in `chrome/userChrome.css`
--go to `about:support`
--click on `clear startup cache` at top and restart browser.
+- open  `about:support` in firefox or firefox based browser.
+- go to your profile directory
+- add user.js
+- create a folder `chrome`
+- add userChrome.css in `chrome/userChrome.css`
+- go to `about:support`
+- click on `clear startup cache` at top and restart browser.
 
 ### Enjoy bestfox
