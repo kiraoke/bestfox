@@ -88,7 +88,7 @@ user_pref("browser.startup.page", 3);
 /* 0103: set HOME+NEWWINDOW page
  * about:home=Firefox Home (default, see 0105), custom URL, about:blank
  * [SETTING] Home>New Windows and Tabs>Homepage and new windows ***/
-user_pref("browser.startup.homepage", "about:blank");
+// user_pref("browser.startup.homepage", "about:blank");
 /* 0104: set NEWTAB page
  * true=Firefox Home (default, see 0105), false=blank page
  * [SETTING] Home>New Windows and Tabs>New tabs ***/
@@ -305,8 +305,8 @@ user_pref("browser.urlbar.suggest.quicksuggest.sponsored", false); // [FF92+]
  * [NOTE] Both must be true for live search to work in the location bar
  * [SETUP-CHROME] Override these if you trust and use a privacy respecting search engine
  * [SETTING] Search>Show search suggestions | Show search suggestions in address bar results ***/
-user_pref("browser.search.suggest.enabled", false);
-user_pref("browser.urlbar.suggest.searches", false);
+user_pref("browser.search.suggest.enabled", true);
+user_pref("browser.urlbar.suggest.searches", true);
 /* 0805: disable urlbar trending search suggestions [FF118+]
  * [SETTING] Search>Search Suggestions>Show trending search suggestions (FF119) ***/
 user_pref("browser.urlbar.trending.featureGate", false);
@@ -650,13 +650,13 @@ user_pref("_user.js.parrot", "2800 syntax error: the parrot's bleedin' demised!"
  * [NOTE] In FF129+ clearing "siteSettings" on shutdown (2811), or manually via site data (2820) and
  * via history (2830), will no longer remove sanitize on shutdown "cookie and site data" site exceptions (2815)
  * [SETTING] Privacy & Security>History>Custom Settings>Clear history when Firefox closes | Settings ***/
-user_pref("privacy.sanitize.sanitizeOnShutdown", true);
+user_pref("privacy.sanitize.sanitizeOnShutdown", false);
 
 /** SANITIZE ON SHUTDOWN: IGNORES "ALLOW" SITE EXCEPTIONS | v2 migration is FF128+ ***/
 /* 2811: set/enforce what items to clear on shutdown (if 2810 is true) [SETUP-CHROME]
  * [NOTE] If "history" is true, downloads will also be cleared ***/
-user_pref("privacy.clearOnShutdown.cache", true);     // [DEFAULT: true]
-user_pref("privacy.clearOnShutdown_v2.cache", true);  // [FF128+] [DEFAULT: true]
+user_pref("privacy.clearOnShutdown.cache", false);     // [DEFAULT: true]
+user_pref("privacy.clearOnShutdown_v2.cache", false);  // [FF128+] [DEFAULT: true]
 user_pref("privacy.clearOnShutdown.downloads", false); // [DEFAULT: true]
 user_pref("privacy.clearOnShutdown.formdata", true);  // [DEFAULT: true]
 user_pref("privacy.clearOnShutdown.history", false);   // [DEFAULT: true]
@@ -698,17 +698,17 @@ user_pref("privacy.clearSiteData.historyFormDataAndDownloads", true);
  * [NOTE] Regardless of what you set "downloads" to, as soon as the dialog
  * for "Clear Recent History" is opened, it is synced to the same as "history"
  * [SETTING] Privacy & Security>History>Custom Settings>Clear History ***/
-user_pref("privacy.cpd.cache", true);    // [DEFAULT: true]
-user_pref("privacy.clearHistory.cache", true);
+user_pref("privacy.cpd.cache", false);    // [DEFAULT: true]
+user_pref("privacy.clearHistory.cache", false);
 user_pref("privacy.cpd.formdata", true); // [DEFAULT: true]
-user_pref("privacy.cpd.history", true);  // [DEFAULT: true]
+user_pref("privacy.cpd.history", false);  // [DEFAULT: true]
    // user_pref("privacy.cpd.downloads", true); // not used, see note above
 user_pref("privacy.clearHistory.historyFormDataAndDownloads", true);
 user_pref("privacy.cpd.cookies", false);
-user_pref("privacy.cpd.sessions", true); // [DEFAULT: true]
+user_pref("privacy.cpd.sessions", false); // [DEFAULT: true]
 user_pref("privacy.cpd.offlineApps", false); // [DEFAULT: false]
 user_pref("privacy.clearHistory.cookiesAndStorage", false);
-   // user_pref("privacy.cpd.openWindows", false); // Session Restore
+user_pref("privacy.cpd.openWindows", false); // Session Restore
    // user_pref("privacy.cpd.passwords", false);
    // user_pref("privacy.cpd.siteSettings", false);
    // user_pref("privacy.clearHistory.siteSettings", false);
@@ -1414,8 +1414,3 @@ user_pref("mousewheel.default.delta_multiplier_y", 300); // 250-400; adjust this
 ****************************************************************************/
 
 
-/****************************************************************************
- * ZEN CUSTOM OVERRIDES
-****************************************************************************/
-user_pref("zen.urlbar.behavior", normal);
-user_pref("zen.urlbar.replace-newtab", false);
