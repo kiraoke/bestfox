@@ -1,3 +1,17 @@
+/* for transparent backfround in zen */
+:root { --zen-themed-toolbar-bg-transparent: transparent !important; } 
+
+/* Zen transparency */
+:root{
+	--zen-main-browser-background: #00000000 !important;
+}
+
+/* Remove new tab background color after 1.8b */
+.browserStack browser {
+	background-color: transparent !important;
+}
+
+
 .titlebar-min {display:none!important;}
 .titlebar-max {display:none!important;}
 .titlebar-restore {display:none!important;}
