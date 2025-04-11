@@ -11,6 +11,18 @@
 	background-color: transparent !important;
 }
 
+/* Hide the URL tooltip in the bottom left corner */
+#statuspanel[type="status"] {
+  display: none !important;
+  opacity: 0 !important;
+  max-height: 0px !important;
+}
+
+#statuspanel {
+    display: none !important;
+}
+
+
 
 .titlebar-min {display:none!important;}
 .titlebar-max {display:none!important;}
