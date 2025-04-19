@@ -1419,3 +1419,4 @@ user_pref("mousewheel.default.delta_multiplier_y", 300); // 250-400; adjust this
 ****************************************************************************/
 user_pref("browser.tabs.allow_transparent_browser", true);
 user_pref("zen.widget.linux.transparency", true);
+user_pref("nebula-tab-loading-animation", 0);
