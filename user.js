@@ -1418,3 +1418,4 @@ user_pref("mousewheel.default.delta_multiplier_y", 300); // 250-400; adjust this
  * START: ZEN*
 ****************************************************************************/
 user_pref("browser.tabs.allow_transparent_browser", true);
+user_pref("zen.widget.linux.transparency", true);
