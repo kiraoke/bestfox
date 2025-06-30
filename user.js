@@ -1422,3 +1422,13 @@ user_pref("zen.widget.linux.transparency", true);
 user_pref("nebula-tab-loading-animation", 0);
 user_pref("devtools.debugger.remote-enabled", true); // browser dev tools enable
 user_pref("zen.view.grey-out-inactive-windows", false);
+
+
+/****************************************************************************
+ * START: HARDWARE ACCELERATION*
+****************************************************************************/
+user_pref("media.ffmpeg.vaapi.enabled", true);
+user_pref("media.hardware-video-decoding.force-enabled", true);
+user_pref("media.rdd-ffmpeg.enabled", true);
+user_pref("gfx.x11-egl.force-enabled", true);
+user_pref("widget.dmabuf.force-enabled", true);
