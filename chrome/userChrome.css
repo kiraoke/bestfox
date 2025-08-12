@@ -1,5 +1,3 @@
-@import "Nebula/Nebula.css";
-
 /* for transparent backfround in zen */
 :root { --zen-themed-toolbar-bg-transparent: transparent !important; } 
 
